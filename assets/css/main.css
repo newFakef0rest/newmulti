@@ -2107,3 +2107,7 @@ body {
         height: 240px;
     }
 }
+
+.black {
+    color: #0c0c0c !important;
+}
