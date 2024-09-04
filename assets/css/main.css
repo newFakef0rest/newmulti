@@ -776,7 +776,8 @@ body {
 .intro--banner button .btn-background {
     position: absolute;
     top: 0;
-    left: 23px;
+    left: 0;
+    /* was 23px, so when hovering - it would go a little bit to the left*/
     right: 0;
     max-height: 31.8px;
     height: 100%;
@@ -989,7 +990,15 @@ body {
     margin-top: 10px;
     font-size: 12px;
     font-weight: 700;
-    text-transform: uppercase
+    text-transform: uppercase;
+}
+
+.slider--item-left .slider--item-title {
+    max-width: 200px;
+}
+
+.slider--item-right .slider--item-title {
+    max-width: 200px;
 }
 
 .work--lockup .slider--item-description {
@@ -1032,7 +1041,8 @@ body {
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
-    display: block
+    display: block;
+    height: 400px;
 }
 
 .work--lockup .slider--item-center a {
@@ -1924,6 +1934,15 @@ body {
     transition: transform .4s, opacity .4s;
     transition: transform .4s, opacity .4s, -webkit-transform .4s
 }
+.outer-nav>a.is-vis {
+    -webkit-transform: translateX(0) translateZ(0);
+    transform: translateX(0) translateZ(0);
+    opacity: 1;
+    -webkit-transition: opacity .4s, -webkit-transform .4s;
+    transition: opacity .4s, -webkit-transform .4s;
+    transition: transform .4s, opacity .4s;
+    transition: transform .4s, opacity .4s, -webkit-transform .4s
+}
 .outer-nav>li::before {
     content: "";
     position: absolute;
@@ -2110,4 +2129,8 @@ body {
 
 .black {
     color: #0c0c0c !important;
+}
+
+.langLink {
+    color: #A2FF00;
 }

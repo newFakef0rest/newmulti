@@ -159,7 +159,7 @@ $( document ).ready(function() {
       setTimeout(function(){
         $('.perspective').addClass('effect-rotate-left--animate');
       }, 25);
-      $('.outer-nav, .outer-nav li, .outer-nav--return').addClass('is-vis');
+      $('.outer-nav, .outer-nav li, .outer-nav a, .outer-nav--return').addClass('is-vis');
 
     });
 
@@ -169,7 +169,7 @@ $( document ).ready(function() {
       setTimeout(function(){
         $('.perspective').removeClass('perspective--modalview');
       }, 400);
-      $('.outer-nav, .outer-nav li, .outer-nav--return').removeClass('is-vis');
+      $('.outer-nav, .outer-nav li, .outer-nav a, .outer-nav--return').removeClass('is-vis');
 
     });
 
