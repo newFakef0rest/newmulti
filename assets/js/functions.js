@@ -159,7 +159,7 @@ $( document ).ready(function() {
       setTimeout(function(){
         $('.perspective').addClass('effect-rotate-left--animate');
       }, 25);
-      $('.outer-nav, .outer-nav li, .outer-nav a, .outer-nav--return').addClass('is-vis');
+      $('.outer-nav, .outer-nav li, .langLink , .outer-nav--return').addClass('is-vis');
 
     });
 
