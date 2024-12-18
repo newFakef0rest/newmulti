@@ -26,10 +26,37 @@
 			width: 100%;
 			max-width: 60%;
 		}
+		.burger-content-items .outer-nav {
+			transform: translate(100%, -50%);
+		}
+		@media (max-width: 500px) {
+			.outer-nav li {
+				font-size: 24px;
+			}
+			.outer-nav li::before {
+				height: 7px;
+			}
+			.outer-nav a {
+				font-size: 24px !important;
+			}
+		}
 	</style>
 </head>
 
 <body>
+
+<div class='burger-content'>
+	<div class='burger-content-items'>
+		<ul class="outer-nav">
+			<li class="is-active">Bosh sahifa</li>
+			<li>Portfolio</li>
+			<li>Biz haqimizda</li>
+			<li>Aloqalar</li>
+			<a href='./index.html' class='langLink' style='text-decoration: none'>Русский</a>
+			<a href='./english.html' class='langLink' style='text-decoration: none'>English</a>
+		</ul>
+	</div>
+</div>
 
 <!-- notification for small viewports and landscape oriented smartphones -->
 <div class="device-notification">
@@ -53,6 +80,9 @@
           <div class="header--nav-toggle">
             <span></span>
           </div>
+	        <div class="burger-button">
+		        <span></span>
+	        </div>
         </header>
         <nav class="l-side-nav">
           <ul class="side-nav">
@@ -367,7 +397,7 @@
       </div>
     </div>
   </div>
-  <ul class="outer-nav">
+  <ul class="outer-nav-first outer-nav">
     <li class="is-active">Bosh sahifa</li>
     <li>Portfolio</li>
     <li>Biz haqimizda</li>
